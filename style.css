@@ -1,0 +1,63 @@
+$dark: #303A52;
+$light: #f1f1f1;
+
+$colorSet1: #574B90; // Purple
+$colorSet2: #9E579D; // Matenta
+$colorSet3: #FC85AE; // Pink
+
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 2rem;
+	background-color: $dark;
+}
+h1, h2, h3, h4 {
+	color: $colorSet2;
+	text-transform: uppercase;
+	line-height: 1.5;
+	margin: 0;
+}
+
+header {
+	background-color: $colorSet1;
+	padding: 5rem;
+	text-align: center;
+	
+	h1 {
+		color: $light;
+	}
+}
+.container {
+	width: 80%;
+	background-color: $light;
+	margin: 0 auto;
+	padding: 3rem 1rem;
+	
+	.content {
+		text-align:center;
+	}
+}
+.para1, .para2 {
+	line-height: 1.5;
+}
+
+button[type="submit"]{
+	display: block;
+	margin: 0 auto;
+	background-color: $colorSet1;
+	color: $light;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 25px;
+	font-size: 2rem;
+	box-shadow: 0 0 3rem rgba(0,0,0, .4px);
+	cursor: pointer;
+	padding: 2rem;
+	transition: all .3s ease-out;
+	
+	&:hover {
+		background-color: darken($colorSet3, 20%);
+	}
+}
