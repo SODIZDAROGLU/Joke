@@ -1,43 +1,43 @@
-$dark: #303A52;
+/* $dark: #303A52;
 $light: #f1f1f1;
 
 $colorSet1: #574B90; // Purple
 $colorSet2: #9E579D; // Matenta
-$colorSet3: #FC85AE; // Pink
+$colorSet3: #FC85AE; // Pink */
 
 html {
 	font-size: 10px;
 }
 body {
 	font-size: 2rem;
-	background-color: $dark;
+	background-color:#303A52;
 }
 h1, h2, h3, h4 {
-	color: $colorSet2;
+	color: #9E579D;
 	text-transform: uppercase;
 	line-height: 1.5;
 	margin: 0;
 }
 
 header {
-	background-color: $colorSet1;
+	background-color: #574B90;
 	padding: 5rem;
 	text-align: center;
 	
 	h1 {
-		color: $light;
+		color: #f1f1f1;
 	}
 }
 .container {
 	width: 80%;
-	background-color: $light;
+	background-color: #f1f1f1;
 	margin: 0 auto;
 	padding: 3rem 1rem;
-	
-	.content {
+}	
+.content {
 		text-align:center;
 	}
-}
+
 .para1, .para2 {
 	line-height: 1.5;
 }
@@ -45,8 +45,8 @@ header {
 button[type="submit"]{
 	display: block;
 	margin: 0 auto;
-	background-color: $colorSet1;
-	color: $light;
+	background-color: #574B90;
+	color:  #f1f1f1;
 	font-weight: bold;
 	text-transform: uppercase;
 	border: none;
@@ -58,6 +58,6 @@ button[type="submit"]{
 	transition: all .3s ease-out;
 	
 	&:hover {
-		background-color: darken($colorSet3, 20%);
+		background-color: darken(#FC85AE, 20%);
 	}
 }
